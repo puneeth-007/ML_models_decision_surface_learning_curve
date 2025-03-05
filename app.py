@@ -45,7 +45,7 @@ elif ml=='Decision Tree':
     model=DecisionTreeClassifier()
 
 
-if st.button('Submit'):
+if st.sidebar.button('Submit'):
     if da=='classification':
         X, y = make_classification(n_samples=1000, n_features=2, n_redundant=0, n_repeated=0,random_state=20)
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=20)
